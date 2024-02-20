@@ -1,21 +1,172 @@
 ---
 
 ---
+<style>
+	:root
+	{
+	--color-primary:red;
+	--color-secondary:blue;
+	}
+	html
+	{
+	font-size:62.5%;
+	/* Allows you to use rems instead of pixels for sizing */
+	/*
+	.5rem = 5px
+	1rem = 10px
+	1.6rem = 16px
+	2rem = 20px
+	6rem = 60px
+	*/
+	}
+	
+	*, *::before, *::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+	
+	/* Easy Pixel Calculations With Rem Units */
+	
+	body
+	{
+	font-size:1.6rem;
+	}
+	/* Fix Browser bounce on macs */
+	body{
+	overflow-x: auto;
+	width: 100%;
+	overscroll-behavior: none;
+	
+	}
+	#pageheader{
+	min-height: 200px;
+	background-color: coral;
+	padding: 1rem;
+	}
+	#showcase{
+	min-height: 200px;
+	background-color: lightblue;
+	padding: 1rem;
+	}
+	#features{
+	min-height: 200px;
+	background-color: aqua;
+	padding: 1rem;
+	}
+	#pagecontent{
+	min-height: 200px;
+	background-color: lightgreen;
+	padding: 1rem;
+	}
+	#semesters{
+	min-height: 200px;
+	background-color: lightcyan;
+	padding: 1rem;
+	}
+	#pagefooter{
+	min-height: 200px;
+	background-color: blue;
+	padding: 1rem;
+	}
+	
+	
+	
+	
+	
+	
+	
+	/* Media Queries */
+	@media only screen and (min-width:320px)
+	{
+	body
+	{
+	background-color: magenta;
+	}
+	}
+	@media only screen and (min-width:480px)
+	{
+	body
+	{
+	background-color: yellow;
+	}
+	}
+	@media only screen and (min-width:768px)
+	{
+	body
+	{
+	background-color: lime;
+	}
+	}
+	@media only screen and (min-width:1024px)
+	{
+	body
+	{
+	background-color: coral;
+	}
+	}
+	@media only screen and (min-width:1200px)
+	{
+	body
+	{
+	background-color: steelblue;
+	}
+	}
+	</style>
+Today's starter code:
 
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro - Angelo Cano-Diaz</title>
-	</head>
-	<body>
-		<h1>Astro - Angelo Cano Diaz - Deploy </h1>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theme Build For Astro</title>
 
-		<h2>Netlify</h2>
+</head>
+<body>
+<!-- 
+        pageheader
+        showcase
+        features 
+        page content
+        semesters
+        pagefooter
+-->
 
-		<p>It is easy to publish with Astro using Netlify.</p>
-		<p>Local1host and Publishing.</p>
-	</body>
+<!-- Begin Pageheader -->
+<header id="pageheader">
+    pageheader
+</header>
+<!-- End Pageheader -->
+
+
+<!-- Begin Showcase -->
+<section id="showcase">
+    showcase
+</section>
+<!-- End Showcase -->
+
+<!-- Begin Features -->
+<section id="features">
+    features
+</section>
+<!-- End Features -->
+
+<!-- Begin Pagecontent -->
+<section id="pagecontent">pagecontent</section>
+<!-- End Pagecontent -->
+
+<!-- Begin Semesters -->
+<section id="semesters">semesters</section>
+<!-- End Semesters -->
+
+<!-- Begin Pagefooter -->
+<footer id="pagefooter">pagefooter</footer>
+<!-- End Pagefooter -->
+
+
+
+
+
+</body>
 </html>
