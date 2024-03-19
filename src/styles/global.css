@@ -78,11 +78,11 @@ color: #FFF;
 border: .2rem solid none;
 background-color:var(--color-primary);
 background-image: linear-gradient(to bottom, var(--color-primary), var(--color-secondary) );
-background-image: url(images/pond.png);
+background-image: url(images/beach.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
-background-position: bottom left;
+background-position: bottom;
 }
 
 #showcasetext{
@@ -114,13 +114,14 @@ margin: auto;
 }
 
 #showcaseintro{
-color: #fff;
+color: #333;
 text-align: center;
 font-size: 3rem;
 }
 
 #logosbig{
 display: none;
+
 }
 
 #logosmall{
