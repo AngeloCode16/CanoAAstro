@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Key Assignments</title>
+    <style>
+    h1{
+        text-align: center;
+    }
+
+    body{
+        background-color: tomato;
+    }
+
+
+    .thumbnail {
+        background-color: lightcoral;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .thumb {
+        width: 150px;
+        height: 150px;
+    }
+
+    .thumbnail a{
+        background-color: none;
+        position: relative;
+    }
+
+    .thumbnail a[data-tooltip]:after {
+        background-color: rgb(0, 0, 0, .7);
+        color: white;
+        padding: 0.5rem;
+        content: attr(data-tooltip);
+        position: absolute;
+        z-index: 1;
+        top: -15%;
+        left: 10%;
+        right: 10%;
+        border-radius: 10px;
+        text-align: center;
+        transform: scale(0);
+        transition: all .5s;
+    }
+
+    .thumbnail a[data-tooltip]:hover:after {
+        transform: scale(1);
+    }
+
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Key Assignments Tooltip Demo</h1>
+    <section id="workthumbnails">
+      <div class="thumbnail">
+        <a href="https://google.com" data-tooltip="Terminal Assignment"><img src="images/thumbnail.png" alt="image description" class="thumb" /></a>
+
+        <a href="https://youtube.com" data-tooltip="VS Code Assignment"> <img src="images/thumbnail.png" alt="VS Code" class="thumb" /></a>
+
+        <a href="https://classroom.google.com/" data-tooltip="Git Assignment"><img src="images/thumbnail.png" alt="Git" class="thumb" /></a>
+
+        <a href="https://google.com " data-tooltip="Mark Down Assignment"><img src="images/thumbnail.png" alt="Mark Down" class="thumb" /></a>
+
+        <a href="https://google.com" data-tooltip="Photoshop Assignment"><img src="images/thumbnail.png" alt="Photoshop" class="thumb" /></a>
+
+        <a href="https://google.com" data-tooltip="GitHub Assignment"><img src="images/thumbnail.png" alt="GitHub" class="thumb" /></a>
+      </div>
+    </section>
+  </body>
+</html>
